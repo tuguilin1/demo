@@ -1,0 +1,68 @@
+/*
+* @Author: tuguilin
+* @Date:   2017-11-18 17:01:34
+* @Last Modified by:   tuguilin
+* @Last Modified time: 2017-11-20 16:09:55
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #f6f6f6;
+	font:12px/1.5;
+	font-family: tahoma,arial;
+}
+
+li{
+	list-style:none;
+}
+
+img{
+	display: block;
+	border:none;
+}
+label{
+	cursor: pointer;
+}
+input[type='checkbox']{
+	cursor:pointer;
+}
+
+.hide{
+	display: none;
+}
+
+a{
+	color:white;
+	cursor: pointer;
+	text-decoration: none;
+}
+.link-text{
+	color:white;
+	text-decoration: none;
+}
+
+.btn{
+	display: inline-block;
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+	border:none;
+	background: #c60023;
+	font-size: 18px;
+	font-weight: bolder;
+	color:#fff;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+}
+.btn-mini{
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	padding: 0 15px;
+	background: gray;
+}

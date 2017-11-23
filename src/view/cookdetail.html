@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<%= require('html-loader!./nav.html') %>
+	<div class="container">
+		<div class="cook_left">
+			<div class="cook_head" id='cookhead'>
+			</div>
+			<div class='cook_material_head'>
+					食材明细
+			</div>
+			<div class="cook_material" id="cook_material">
+			</div>
+			<div class='cook_material_head'>
+					做法步骤
+			</div>
+			<div class="process" id="process">
+				
+			</div>
+		</div>
+		<div class="cook_right">
+			<div class="recommend">
+				<span class='recommend_head'>
+					热门推荐
+				</span>
+				<a class='link' href='./searchdetail.html?keyword=鱼香肉丝'>鱼香肉丝</a><a class='link' href='./searchdetail.html?keyword=宫保鸡丁'>宫保鸡丁</a>
+				<a class='link' href='./searchdetail.html?keyword=油焖茄子'>油焖茄子</a><a class='link' href='./searchdetail.html?keyword=水煮肉片'>水煮肉片</a>
+				<a class='link' href='./searchdetail.html?keyword=酸辣土豆丝'>酸辣土豆丝</a><a class='link' href='./searchdetail.html?keyword=糖醋里脊'>糖醋里脊</a>
+				<a class='link' href='./searchdetail.html?keyword=番茄炒蛋'>番茄炒蛋</a><a class='link' href='./searchdetail.html?keyword=红烧肉'>红烧肉</a>
+				<a class='link' href='./searchdetail.html?keyword=辣子鸡'>辣子鸡</a><a class='link' href='./searchdetail.html?keyword=洋葱炒肉'>洋葱炒肉</a>
+				<a class='link' href='./searchdetail.html?keyword=水煮鱼'>水煮鱼</a><a class='link' href='./searchdetail.html?keyword=酸菜鱼'>酸菜鱼</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+/*
+* @Author: tuguilin
+* @Date:   2017-11-22 10:10:21
+* @Last Modified by:   tuguilin
+* @Last Modified time: 2017-11-23 09:52:03
+*/
+body{
+	margin-top: 60px;
+}
+
+.container{
+	width: 1000px;
+	margin:0 auto;
+	background: #DDD;
+}
+
+.cook_left{
+	width: 600px;
+	float: left;
+}
+
+.cook_right{
+	width: 300px;
+	height: 100%;
+	background: #CCC;
+	float: right;
+	height: 400px;
+	position: fixed;
+	top:150px;
+	left:900px;
+}
+
+.cook_head{
+	width: 550px;
+	margin-left: 25px;
+	min-height: 400px;
+}
+
+.cook_head div:first-child{
+	height: 50px;
+	font-size: 25px;
+	font-weight: bolder;
+	line-height: 50px;
+	text-align: center;
+	width: 100%;
+}
+
+.cook_head img{
+	width: 100%;
+	height: 550px;
+	display: block;
+}
+
+.cook_head div:last-child{
+	width: 100%;
+	margin-top: 20px;
+	font-size: 16px;
+}
+
+.cook_material_head{
+	width: 550px;
+	font-size: 24px;
+	color:#FF094F;
+	border-bottom: 1px solid #FF094F;
+	margin-left: 25px;
+	height: 50px;
+	clear: both;
+}
+.cook_material{
+	min-height: 300px;
+}
+
+.cook_material div{
+	width: 200px;
+	height: 50px;
+	float: left;
+	text-align: center;
+
+}
+
+.cook_material div span:first-child{
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	color:#FF094F;
+}
+.cook_material div span:last-child{
+	height: 15px;
+	line-height: 15px;
+	margin-top: 5px;
+	display: block;
+	color:#999;
+}
+
+.process{
+	clear: both;
+	width: 550px;
+	margin-left: 25px;
+}
+
+.material_process{
+	width: 100%;
+	height: 300px;
+	display: flex;
+}
+
+.material_process div:first-child{
+	width: 300px;
+	height: 100%;
+}
+
+.material_process div:last-child{
+	flex:1;
+	font-size: 16px;
+	margin-top: 50px;
+}
+
+.material_process img{
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin: 50px 50px;
+}
+.recommend_head{
+	margin-left: 10px;
+	color:#FF094F;
+	margin-top: 20px;
+	font-size: 25px;
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 1px solid #FF094F;
+	
+}
+
+.recommend a{
+	width: 100px;
+	float: left;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	color:#FF094F;
+}

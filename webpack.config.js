@@ -2,7 +2,7 @@
 * @Author: tuguilin
 * @Date:   2017-11-17 09:21:36
 * @Last Modified by:   tuguilin
-* @Last Modified time: 2017-11-17 19:39:49
+* @Last Modified time: 2017-11-22 15:02:13
 */
 var path = require('path');
 var webpack = require('webpack');
@@ -24,6 +24,8 @@ var config={
 		'common':['./src/page/common/index.js'],
 		'index':['./src/page/index/index.js'],
 		'login':['./src/page/login/index.js'],
+		'cookdetail':['./src/page/cookdetail/index.js'],
+		'searchdetail':['./src/page/searchdetail/index.js']
 	},
 	output:{
 		path:path.join(__dirname,'dist'),
@@ -45,6 +47,40 @@ var config={
 			}
 		]
 	},
+	resolve:{
+		alias:{
+			util:path.join(__dirname,'src/util'),
+			image:path.join(__dirname,'src/image'),
+			page:path.join(__dirname,'src/page'),
+			service:path.join(__dirname,'src/service'),
+			view:path.join(__dirname,'src/view'),
+			common:path.join(__dirname,'src/common'),
+			node_modules:path.join(__dirname,'node_modules'),
+		}
+	},
+	devServer: {
+	    publicPath: '/dist',
+		hot: true,
+	    proxy: {
+	        // 请求到 '/device' 下 的请求都会被代理到 target： http://debug.xxx.com 中
+	        '/search/*': { 
+	            target: 'https://way.jd.com/jisuapi/search',
+	            secure: false, // 接受 运行在 https 上的服务
+	            changeOrigin: true
+	        }, 
+	        '/byclass/*': { 
+	            target: 'https://way.jd.com/jisuapi/byclass',
+	            secure: false, // 接受 运行在 https 上的服务
+	            changeOrigin: true
+	        },
+  			'/byid/*': { 
+	            target: 'https://way.jd.com/jisuapi/detail',
+	            secure: false, // 接受 运行在 https 上的服务
+	            changeOrigin: true
+	        }
+
+	    }
+    },
 	plugins:[
 		new webpack.optimize.CommonsChunkPlugin({
 			name:'common',
@@ -52,7 +88,9 @@ var config={
 		}),
 		new ExtractTextPlugin('css/[name].css'),
 		new HtmlWebpackPlugin(getHtmlConfig('index')),
-		new HtmlWebpackPlugin(getHtmlConfig('login')),
+		new HtmlWebpackPlugin(getHtmlConfig('cookdetail')),
+		new HtmlWebpackPlugin(getHtmlConfig('searchdetail')),
+		new webpack.HotModuleReplacementPlugin()
 	]
 };
 

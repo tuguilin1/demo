@@ -2,7 +2,42 @@
 <html lang="en">
 	<%= require('html-loader!./layout/layout.html') %>
 <body>
-	caonima
+	<%= require('html-loader!./nav.html') %>
+	<div class="container">
+		<div class="header">
+			<img src="<%= require('../image/logo.png') %>">
+			<div class="search">
+				<span id='search' class='btn btn1'>搜索</span>
+				<input type="text" id='search_value'>
+			</div>
+			
+		</div>
+		<div class="banners" id='banners'>
+			<div class="left_nav" id='cookbook'>
+				<div>
+					<span id='hot'>热门菜谱</span>
+					<span>></span>	
+				</div>
+				<div>
+					<span id='expert'>菜谱专题</span>
+					<span>></span>	
+				</div>
+				<div>
+					<span id='search_cook'>菜谱搜索</span>
+					<span>></span>	
+				</div>
+				<div class='aside' id='aside'>
+					
+				</div>
+			</div>
+			<div class="right_banner" id='right'>
+				<div class="loop" id='loop'>
+					
+				</div>
+			</div>
+		</div>
+		<%= require('html-loader!./layout/expert.html') %>
+	</div>
 	<script type="text/javascript" src='../../dist/js/base.js'></script>
 </body>
 </html>

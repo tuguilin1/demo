@@ -1,0 +1,75 @@
+/*
+* @Author: tuguilin
+* @Date:   2017-11-22 14:42:16
+* @Last Modified by:   tuguilin
+* @Last Modified time: 2017-11-22 21:57:42
+*/
+body{
+	margin-top: 60px;
+}
+
+.container{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.search{
+	width: 800px;
+	margin-left: 100px;
+	height: 100px;
+}
+.search input{
+	float: right;
+	width: 80%;
+	height: 40px;
+	margin-top: 25px;
+	border: 1px solid #C52142;
+}
+
+.btn1{
+	float: right;
+	background: #C52142;
+	padding: 0 20px;
+	height: 42px;
+	line-height: 40px;
+	margin-right: 20px;
+	margin-top: 25px;
+}
+
+.cooksall{
+	width: 900px;
+	margin: 0 auto;
+	
+}
+
+.cooks{
+	width: 100%;
+	height: 255px;
+	display: flex;
+	border-bottom: 1px solid #c52142;
+}
+
+.cooksimg{
+	width: 210px;
+	height: 250px;
+}
+.cooksimg img{
+	display: block;
+	width: 200px;
+	height: 200px;
+	margin-top:50px;
+}
+
+.cooksdetail{
+	width: 300px;
+	height: 250px;
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 50px 0;
+	color:#C52142;
+}
+.cooksdetail span{
+	margin-bottom: 20px;
+}
